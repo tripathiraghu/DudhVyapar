@@ -16,6 +16,56 @@ include 'connection.php';
 <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 <link rel="icon" href="image/icon.png">
+
+<style type="text/css">
+.welcome center img{
+	height: 140px;
+	width: 140px;
+}
+.welcome center p{
+	font-size: 32px;
+}
+
+
+
+.row .col-4 .links center img{
+	width: 120px;
+	height: 120px;
+	}
+
+.row .col-4 .links center p{
+	font-size: 30px;
+	}
+
+@media screen and (min-width: 80px) and (max-width: 750px) {
+	.welcome center p{
+	font-size: 20px;
+}
+
+	.welcome center img{
+	height: 140px;
+	width: 140px;
+}
+
+	.row .col-4 .links center img{
+	width: 80px;
+	height: 80px;
+	}
+
+
+.row .col-4 .links center p{
+	font-size: 15px;
+	}
+
+
+}
+
+
+
+
+
+</style>
+
 </head>
 
 
@@ -49,9 +99,51 @@ include 'connection.php';
       </div>
     </nav>
 <!-- nav bar ends -->
-<div class="container" style="margin-top: 80px;"> 
+<div class="container welcome" style="margin-top: 80px;"> 
+<center>
+	<img src="image/icon.png">  
+	<p>Welcome To Dudh Vyapar</p>
+</center>
+</div>
+<br>
+<br>
+<div class="row">
+		<!-- milk collection -->
+		<div class="col-4">
+			<a href="milkCollection.php">
+			<div class="container links">
+				<center>
+					<img src="image/milk.png" >
+					<p>Milk Collection</p>
+				</center>	
+			</div>
+			</a>
+		</div>
 
-	
+		<!-- Sales -->
+		<div class="col-4">
+			<a href="sales.php">
+			<div class="container links">
+				<center>
+					<img src="image/sales.png" >
+					<p>Sales Register</p>
+				</center>	
+			</div>
+			</a>
+		</div>
+
+		<!-- Add Memmber -->
+		<div class="col-4"> 
+			<a href="member.php">
+			<div class="container links">
+				<center>
+					<img src="image/member.png" >
+					<p>Add/Update Member</p>
+				</center>	
+			</div>
+			</a>
+		</div>
+	</div>
 </div>
 
 
