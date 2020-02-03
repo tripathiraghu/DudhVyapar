@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Add Member | Dudh Vyaparr</title>
+	<title>Update Rate | Dudh Vyaparr</title>
 
 
 <link rel="stylesheet" href="css/bootstrap.min.css" >
@@ -31,11 +31,11 @@
           <li class="nav-item ">
             <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="addMember.php">Add Member</a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="#">Update Rate List</a>
           </li>
 

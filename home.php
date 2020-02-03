@@ -71,7 +71,7 @@ include 'connection.php';
 
 <body>
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="margin-bottom: 10%;">
-      <a class="navbar-brand" href="index.php"><img src="image/icon.png" height="50" width="50" style="margin-right: 2%"> Dudh Vyapar</a>
+      <a class="navbar-brand" href="home.php"><img src="image/icon.png" height="50" width="50" style="margin-right: 2%"> Dudh Vyapar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

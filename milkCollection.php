@@ -22,7 +22,7 @@
 <!-- navbar -->
 
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="margin-bottom: 10%;">
-      <a class="navbar-brand" href="index.php"><img src="image/icon.png" height="50" width="50" style="margin-right: 2%"> Dudh Vyapar</a>
+      <a class="navbar-brand" href="home.php"><img src="image/icon.png" height="50" width="50" style="margin-right: 2%"> Dudh Vyapar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -53,7 +53,7 @@
 <!-- navebar Ends -->
 <!-- Member add form -->
 <div class="container">
-<h2 style="margin-top: 100px;" align="center">Add milk</h2>
+<h2 style="margin-top: 100px;" align="center">Add Milk</h2>
 <form method="post" action="addMemberQuery.php" name="fr1" enctype="multipart/form-data">
  <div class="forssm-row">
                   <!-- select Name -->
