@@ -2,7 +2,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Milk Collection | Dudh Vyaparr</title>
+	<title>Add Member | Dudh Vyaparr</title>
 
 
 <link rel="stylesheet" href="css/bootstrap.min.css" >
@@ -31,12 +31,12 @@
           <li class="nav-item ">
             <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item ">
+          <li class="nav-item active">
             <a class="nav-link" href="addMember.php">Add Member</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="updateRate.php">Update Rate List</a>
+            <a class="nav-link" href="#">Update Rate List</a>
           </li>
 
           <li class="nav-item">
@@ -53,69 +53,33 @@
 <!-- navebar Ends -->
 <!-- Member add form -->
 <div class="container">
-<h2 style="margin-top: 100px;" align="center">Add milk</h2>
+<h2 style="margin-top: 100px;" align="center">Add Member</h2>
 <form method="post" action="addMemberQuery.php" name="fr1" enctype="multipart/form-data">
- <div class="forssm-row">
-                  <!-- select Name -->
-
-                  <div class="form-group col-md-12">
-      <label for="inputState">Member Name</label>
-      <select id="inputState" name="state" class="form-control">
-        <option selected>Choose...</option>
-        <!-- user list fetching from DataBase -->
-
-<?php
-
-include 'connection.php';
-$sql_tab = "SELECT * FROM member  ORDER BY id DESC";
-$dt = mysqli_query($con, $sql_tab);
-$s = mysqli_num_rows($dt);
-while ($row = mysqli_fetch_array($dt, MYSQLI_ASSOC)) {
-$id = $row['id'];
-$name = $row['name'];
-$address = $row['address'];
-$mobile = $row['mobile'];
-$date = $row['date'];
-
-echo "<option>".$name."</option>";
-
-
-}
-?>
-
-
-
-
-
-
-
-        
-<!-- user list fetching ends -->
-        </select>
-    </div>
-                <div class="form-group" style="margin-top: 15px; margin-left: 10px ;margin-right: 10px;">
-                    <label for="labelName">S N F</label>
-                            <input type="text" name="snf" class="form-control" id="name" placeholder="S N F" required>
+                    <div class="forssm-row">
+                        <!-- full Name -->
+                        <div class="form-group" style="margin-top: 15px; margin-left: 10px ;margin-right: 10px;">
+                            <label for="labelName">Full Name</label>
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Jhon Deo" required>
                         </div>
 
                         <div class="form-group" style="margin-top: 15px; margin-left: 10px ;margin-right: 10px;">
-                            <label for="labelName">Fat</label>
-                            <input type="text" name="fat" class="form-control" id="address" placeholder="8.0" required>
+                            <label for="labelName">Address</label>
+                            <input type="text" name="address" class="form-control" id="address" placeholder="12 Ganesh Bhawan" required>
                         </div>
                         <!-- mobile Number -->
                         <div class="form-group" style="margin-top: 15px; margin-left: 10px ;margin-right: 10px;">
-                            <label for="Mobile Number" required>Rate</label>
-                            <input type="number" name="rate" class="form-control" id="mobile" placeholder="254">
+                            <label for="Mobile Number" required>Mobile Number</label>
+                            <input type="number" name="mobile" class="form-control" id="mobile" placeholder="9829******">
                         </div>
                         <!-- <div class="form-group" style="margin-top: 15px; margin-left: 10px ;margin-right: 10px;">
                         	<label for="profile_pic" required>Select A Profile Picture</label>
                         <input type="file" name="fileToUpload" id="fileToUpload" >
                     </div> -->
-                       <button type="submit" class="btn " style="width:96%; background-color:rgb(52, 58, 64);color: #fff; font-size: 20px; margin:10px; ">Add</button>
+                       <button type="submit" class="btn " style="width:96%; background-color:rgb(52, 58, 64);color: #fff; font-size: 20px; margin:10px; ">Add Member</button>
                     </div>
                
 
-                       <button  onclick="window.location.href = 'home.php';"  class="btn " style="width:96%; background-color:rgb(52, 58, 64);color: #fff; font-size: 20px; margin:10px; ">Back To Home</button>
+                       <button  onclick="window.location.href = 'member.php';"  class="btn " style="width:96%; background-color:rgb(52, 58, 64);color: #fff; font-size: 20px; margin:10px; ">Back To Member</button>
  </form>
 
 </div>
